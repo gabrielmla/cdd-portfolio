@@ -22,7 +22,7 @@
     <meta name="author" content="Gabriel Morais">
     <meta name="keywords" content="">
 
-    <link rel="icon" href="/cdd-portfolio/favicon.png">
+    <link rel="icon" href="https://gabrielmla.github.io/favicon.png">
     
 
     
@@ -57,7 +57,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
     
     
-    <link rel="stylesheet" href="/cdd-portfolio/css/style-jsjn0006wyhpyzivf6yceb31gvpjatbcs3qzjvlumobfnugccvobqwxnnaj8.min.css" />
+    <link rel="stylesheet" href="https://gabrielmla.github.io/css/style-jsjn0006wyhpyzivf6yceb31gvpjatbcs3qzjvlumobfnugccvobqwxnnaj8.min.css" />
     
     
 
@@ -71,7 +71,7 @@
   <article class="post">
     <h1>404 Not Found</h1>
     <p>Sorry, but we couldn't find the page you're looking for.</p>
-    <p>Please head back <a href="/cdd-portfolio/">home</a>.</p>
+    <p>Please head back <a href="https://gabrielmla.github.io/">home</a>.</p>
   </article>
 </main>
     
@@ -126,7 +126,42 @@
           <div class="media">
             
             <div class="media-body">
-              <a class="link-unstyled" href="/cdd-portfolio/cdd-portfolio/2015/07/hello-r-markdown/">
+              <a class="link-unstyled" href="https://gabrielmla.github.io/2018/04/lab-1---checkpoint-2---minhas-perguntas/">
+                <h3 class="media-heading">Lab 1 - Checkpoint 2 - Minhas perguntas</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Apr 4, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Sobre os dados Esta análise foi realizada utilizando dados sobre avaliações de episódios de séries presentes no IMDB até julho de 2017, nesse relátorio se encontram análises para as séries Black Mirror, Mr Robot e 13 Reasons Why. Mais informações sobre esses dados podem ser encontradas neste repositório.
+dados = read_csv(here(&quot;back/content/data/series_from_imdb.csv&quot;), progress = FALSE, col_types = cols(.default = col_double(), series_name = col_character(), episode = col_character(), url = col_character(), season = col_character())) %&gt;% filter(series_name %in% c(&quot;Black Mirror&quot;, &quot;Mr Robot&quot;, &quot;13 Reasons Why&quot;))  Quanto maior o número de episódios, mais popular a série?</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://gabrielmla.github.io/2018/04/lab-1---checkpoint-1---nossas-perguntas/">
+                <h3 class="media-heading">Lab 1 - Checkpoint 1 - Nossas Perguntas</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Apr 4, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">dados = read_csv(here(&quot;back/content/data/series_from_imdb.csv&quot;), progress = FALSE, col_types = cols(.default = col_double(), series_name = col_character(), episode = col_character(), url = col_character(), season = col_character())) %&gt;% filter(series_name %in% c(&quot;Black Mirror&quot;, &quot;Mr Robot&quot;)) series &lt;- dados %&gt;% group_by(series_name) %&gt;% summarise(n = n())  Qual das séries que você escolheu é mais bem avaliada no IMDB? A diferença é grande? Pequena? Muda de acordo com as temporadas da série? boxplot.user_ratings &lt;- dados %&gt;% ggplot(aes(x = &quot;&quot;, y = user_rating)) + geom_boxplot(width = .</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://gabrielmla.github.io/2015/07/hello-r-markdown/">
                 <h3 class="media-heading">Hello R Markdown</h3>
               </a>
               <span class="media-meta">
@@ -142,167 +177,6 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
             <hr>
           </div>
         
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="/cdd-portfolio/cdd-portfolio/2015/06/welcome-to-tranquilpeak-0.4.3-beta/">
-                <h3 class="media-heading">Welcome to Tranquilpeak 0.4.3-BETA</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Jun 6, 2015
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
-</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="/cdd-portfolio/cdd-portfolio/2015/05/elements-showcase/">
-                <h3 class="media-heading">Elements showcase</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  May 5, 2015
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>Check out how Tranquilpeak theme display well HTML elements (title, paragraph, blockquote, table and more..). It&rsquo;s simple and elegant.
-</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="/cdd-portfolio/cdd-portfolio/2015/05/cover-image-showcase/">
-                <h3 class="media-heading">Cover image showcase</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  May 5, 2015
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>Tranquilpeak integrate a unique &ldquo;cover image&rdquo; feature. Open this post to see how this feature sublimate your article.</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="/cdd-portfolio/cdd-portfolio/2015/03/highlighted-code-showcase/">
-                <h3 class="media-heading">highlighted code showcase</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Mar 3, 2015
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>Tranquilpeak Hugo theme have its own theme to highlight source code. It&rsquo;s based on GitHub theme: simple and elegant. Check out how it sublimate source codes.
-</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="/cdd-portfolio/cdd-portfolio/2014/10/tags-plugins-showcase/">
-                <h3 class="media-heading">Tags plugins showcase</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Oct 10, 2014
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>This post is used to show how tag plugins are displayed. See <a href="https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md#tags">docs</a> for more info.
-</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="/cdd-portfolio/cdd-portfolio/2014/08/hidden-social-section-showcase/">
-                <h3 class="media-heading">Hidden social section showcase</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Aug 8, 2014
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>This post is used to show how a site looks if the social section is hidden.
-</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="/cdd-portfolio/cdd-portfolio/2014/08/hidden-tag-section-showcase/">
-                <h3 class="media-heading">Hidden tag section showcase</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Aug 8, 2014
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>This post is used to show how a site looks if the tag section is hidden.
-</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="/cdd-portfolio/cdd-portfolio/2014/08/hidden-pagination-showcase/">
-                <h3 class="media-heading">Hidden pagination showcase</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Aug 8, 2014
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>This post is used to show how a site looks if the pagination is hidden.
-</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="/cdd-portfolio/cdd-portfolio/2014/08/video-integrations-showcase/">
-                <h3 class="media-heading">Video integrations showcase</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Aug 8, 2014
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>Youtube and Vimeo videos are easily integrated thanks to tags plugins. Of course, you can add video other platforms like dailymotion.
-</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
       </div>
     </div>
     <div class="modal-footer">
@@ -310,7 +184,7 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
          data-message-zero="no post found"
          data-message-one="1 post found"
          data-message-other="{n} posts found">
-         13 posts found
+         3 posts found
       </p>
     </div>
   </div>
@@ -318,7 +192,7 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
     
   
     
-    <div id="cover" style="background-image:url('/cdd-portfolio/images/cover.jpg');"></div>
+    <div id="cover" style="background-image:url('https://gabrielmla.github.io/images/cover.jpg');"></div>
   
 
 
@@ -330,7 +204,7 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
 
 
-<script src="/cdd-portfolio/js/script-qi9wbxp2ya2j6p7wx1i6tgavftewndznf4v0hy2gvivk1rxgc3lm7njqb6bz.min.js"></script>
+<script src="https://gabrielmla.github.io/js/script-qi9wbxp2ya2j6p7wx1i6tgavftewndznf4v0hy2gvivk1rxgc3lm7njqb6bz.min.js"></script>
 
 
 
